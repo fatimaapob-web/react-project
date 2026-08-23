@@ -1,15 +1,18 @@
 function ContactUs() {
     return (
-        <section>
-        <h2>تواصل معنا</h2>
-        <p>اذا كانت لديك اي استفسارات او مقترحات 
+        <section className="contact-us">
+
+        <h2 className="contact-title">تواصل معنا</h2>
+
+        <p className="contact-description">اذا كانت لديك اي استفسارات او مقترحات 
         يمكنك التواصل معنا من خلال 
         المعلومات الموجودة ادناه
         </p>
-        <div>
-        <p>ghufrannhabbib99@gmail.com
+        <div className="contact-info">
+
+        <p className="contact-email">ghufrannhabbib99@gmail.com
         </p>
-        <p>07770000000</p>
+        <p className="contact-phone">07770000000</p>
         </div>
         
         </section>
