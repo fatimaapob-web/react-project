@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
+
 function Navbar(){
     return(
-        <nav class name="navbar">
-            
-    
-            <div className="logo">
+        <nav>
+
+            <div>
                 الشعار
             </div>
-            <ul className="nav-links">
+
+            <ul>
                 
-                <li>التوعية البيئية</li>
-                <li>عن المشروع</li>
-                <li>تواصل معنا</li>
+                <li><Link to="/environmental-awareness">التوعية البيئية</Link></li>
+                <li><Link to="/about-project">عن المشروع</Link></li>
+                <li><Link to="/contact-us">تواصل معنا</Link></li>
             </ul>
         </nav>
     );
