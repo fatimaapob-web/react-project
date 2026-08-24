@@ -30,6 +30,8 @@ function Navbar() {
             تواصل معنا
           </Link>
         </li>
+       <li><Link to="/articles">المقالات</Link></li>
+        
 
       </ul>
 
