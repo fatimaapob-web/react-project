@@ -34,35 +34,37 @@ function Navbar() {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-2 md:flex">
 
           <Link
             to="/"
             className="group relative rounded-xl px-4 py-2 font-semibold text-[#7A5742] transition duration-300 hover:bg-white/40"
           >
             الرئيسية
-
             <span className="absolute bottom-1 right-1/2 h-[2px] w-0 translate-x-1/2 rounded-full bg-[#7A5742] transition-all duration-300 group-hover:w-6" />
           </Link>
 
-
           <Link
-  to="/bakeries"
-  onClick={closeMenu}
-  className="group relative rounded-xl px-4 py-2 font-semibold text-[#7A5742] transition duration-300 hover:bg-white/40"
->
-  المخابز
-
-  <span className="absolute bottom-1 right-1/2 h-[2px] w-0 translate-x-1/2 rounded-full bg-[#7A5742] transition-all duration-300 group-hover:w-6" />
-</Link>
-
+            to="/bakeries"
+            className="group relative rounded-xl px-4 py-2 font-semibold text-[#7A5742] transition duration-300 hover:bg-white/40"
+          >
+            المخابز
+            <span className="absolute bottom-1 right-1/2 h-[2px] w-0 translate-x-1/2 rounded-full bg-[#7A5742] transition-all duration-300 group-hover:w-6" />
+          </Link>
 
           <Link
             to="/environmental-awareness"
             className="group relative rounded-xl px-4 py-2 font-semibold text-[#7A5742] transition duration-300 hover:bg-white/40"
           >
             التوعية البيئية
+            <span className="absolute bottom-1 right-1/2 h-[2px] w-0 translate-x-1/2 rounded-full bg-[#7A5742] transition-all duration-300 group-hover:w-6" />
+          </Link>
 
+          <Link
+            to="/articles"
+            className="group relative rounded-xl px-4 py-2 font-semibold text-[#7A5742] transition duration-300 hover:bg-white/40"
+          >
+            المقالات
             <span className="absolute bottom-1 right-1/2 h-[2px] w-0 translate-x-1/2 rounded-full bg-[#7A5742] transition-all duration-300 group-hover:w-6" />
           </Link>
 
@@ -71,7 +73,6 @@ function Navbar() {
             className="group relative rounded-xl px-4 py-2 font-semibold text-[#7A5742] transition duration-300 hover:bg-white/40"
           >
             عن المشروع
-
             <span className="absolute bottom-1 right-1/2 h-[2px] w-0 translate-x-1/2 rounded-full bg-[#7A5742] transition-all duration-300 group-hover:w-6" />
           </Link>
 
@@ -80,11 +81,9 @@ function Navbar() {
             className="group relative rounded-xl px-4 py-2 font-semibold text-[#7A5742] transition duration-300 hover:bg-white/40"
           >
             تواصل معنا
-
             <span className="absolute bottom-1 right-1/2 h-[2px] w-0 translate-x-1/2 rounded-full bg-[#7A5742] transition-all duration-300 group-hover:w-6" />
           </Link>
 
-          {/* Button */}
           <Link
             to="/contact-us"
             className="flex items-center gap-2 rounded-2xl bg-[#7A5742] px-5 py-3 font-bold text-white shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-lg active:scale-95"
@@ -92,12 +91,12 @@ function Navbar() {
             <span>♻️</span>
             ساهم معنا
           </Link>
-
         </div>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="فتح القائمة"
           className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-xl bg-[#7A5742] md:hidden"
         >
           <span
@@ -123,7 +122,6 @@ function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="mx-auto mt-2 w-full rounded-3xl bg-[#CFC6B5] p-4 shadow-lg md:hidden">
-
           <div className="flex flex-col gap-2">
 
             <Link
@@ -135,11 +133,27 @@ function Navbar() {
             </Link>
 
             <Link
+              to="/bakeries"
+              onClick={closeMenu}
+              className="rounded-2xl px-4 py-3 text-center font-semibold text-[#7A5742] transition hover:bg-white/40"
+            >
+              المخابز
+            </Link>
+
+            <Link
               to="/environmental-awareness"
               onClick={closeMenu}
               className="rounded-2xl px-4 py-3 text-center font-semibold text-[#7A5742] transition hover:bg-white/40"
             >
               التوعية البيئية
+            </Link>
+
+            <Link
+              to="/articles"
+              onClick={closeMenu}
+              className="rounded-2xl px-4 py-3 text-center font-semibold text-[#7A5742] transition hover:bg-white/40"
+            >
+              المقالات
             </Link>
 
             <Link
