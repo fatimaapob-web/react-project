@@ -6,6 +6,7 @@ import ContactUs from "./Pages/ContactUs";
 import Footer from "./components/common/Footer";
 import Articles from "./Pages/Articles";
 import ArticleDetails from "./Pages/ArticleDetails";
+import Tips from "./Pages/Tips";
 
 
 
@@ -20,6 +21,7 @@ function App() {
     <Route path="/contact-us" element={<ContactUs />} />
     <Route path="/articles" element={<Articles />} />
     <Route path="/article/:id" element={<ArticleDetails />} />
+    <Route path="/tips" element={<Tips />} />
   
   </Routes>
 

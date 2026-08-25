@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between bg-[#7A5742] px-8 py-5 text-[#CFC6B5] shadow-md">
+    <nav
+  dir="ltr"
+  className="flex items-center justify-between bg-[#7A5742] px-8 py-5 text-[#CFC6B5] shadow-md"
+>
 
       <div className="text-2xl font-bold">
   🌱 Eco Circle
@@ -30,7 +33,22 @@ function Navbar() {
             تواصل معنا
           </Link>
         </li>
-       <li><Link to="/articles">المقالات</Link></li>
+       <li className="transition duration-200 hover:-translate-y-1">
+  <Link
+    className="text-lg font-semibold transition duration-200 hover:text-white"
+    to="/articles"
+  >
+    المقالات
+  </Link>
+</li>
+<li className="transition duration-200 hover:-translate-y-1">
+  <Link
+    className="text-lg font-semibold transition duration-200 hover:text-white"
+    to="/tips"
+  >
+    النصائح
+  </Link>
+</li>
         
 
       </ul>
