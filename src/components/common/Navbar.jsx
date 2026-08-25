@@ -18,9 +18,9 @@ function Navbar() {
           onClick={closeMenu}
           className="group flex items-center gap-3"
         >
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#7A5742] text-xl shadow-md transition duration-300 group-hover:rotate-[-5deg] group-hover:scale-105">
-            🌱
-          </div>
+         <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#7A5742] text-xl shadow-md transition duration-300 group-hover:rotate-[-5deg] group-hover:scale-105">
+    🌱
+  </div>
 
           <div className="flex flex-col">
             <span className="text-xl font-extrabold text-[#7A5742]">
@@ -171,6 +171,15 @@ function Navbar() {
             >
               تواصل معنا
             </Link>
+        
+<Link
+  to="/tips"
+  onClick={closeMenu}
+  className="rounded-2xl px-4 py-3 text-center font-semibold text-[#7A5742] transition hover:bg-white/40"
+>
+  النصائح
+</Link>
+        
 
             <Link
               to="/contact-us"
