@@ -8,3 +8,19 @@ body {
   direction: rtl;
   text-align: right;
 }
+
+@keyframes pageTitleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-title {
+  animation: pageTitleReveal 0.8s ease-out both;
+}

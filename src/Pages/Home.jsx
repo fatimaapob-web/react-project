@@ -70,10 +70,13 @@ function Home() {
       `}</style>
 
       <div
-        dir="rtl"
-        lang="ar"
-        className="home-page relative left-1/2 -ml-[50vw] w-screen overflow-x-hidden bg-[#FAF9F7] text-right text-neutral-700"
-      >
+  dir="rtl"
+  lang="ar"
+  className="home-page relative w-full overflow-x-hidden bg-[#FAF9F7] text-right text-neutral-700"
+>
+
+
+      
         {/* ── 1. HERO ── */}
         <section className="relative min-h-[88vh] overflow-hidden">
           <div className="absolute inset-0">
@@ -96,8 +99,8 @@ function Home() {
           </div>
 
           <div className="relative mx-auto flex min-h-[88vh] max-w-[1500px] flex-col justify-end px-5 pb-16 pt-32 sm:px-8 lg:px-12 lg:pb-24">
-            <div className="grid items-end gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-              <div className="space-y-7">
+            <div className="grid items-center gap-10 lg:grid-cols-[1fr_1fr]">
+              <div className="text-right lg:pr-10">
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2 text-sm font-medium text-[#CFC6B5] backdrop-blur-md">
                   <span className="h-2 w-2 rounded-full bg-[#CFC6B5]" />
                   نحو بيئة أفضل

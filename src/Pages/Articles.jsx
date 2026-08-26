@@ -26,7 +26,7 @@ function Articles() {
   return (
     <div
       dir="rtl"
-      className="min-h-screen bg-white px-4 sm:px-6 py-12 md:py-16"
+      className="mx-4 my-6 min-h-screen rounded-[40px] bg-[#CFC6B5] px-6 py-12 md:mx-8"
     >
       <div className="max-w-7xl mx-auto">
 
@@ -39,9 +39,9 @@ function Articles() {
           </span>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-[#45427A] mb-5">
-            المقالات
-          </h1>
+          <h1 className="page-title text-4xl md:text-5xl font-bold text-[#45427A] mb-5">
+  المقالات
+</h1>
 
           {/* Description */}
           <p className="max-w-2xl mx-auto text-[#425D7A] text-lg leading-8">

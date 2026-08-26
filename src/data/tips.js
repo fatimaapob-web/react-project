@@ -42,7 +42,7 @@ export const tips = [
     description:
       "قبل التخلص من أي شيء، فكر إذا كان بإمكانك استخدامه مرة أخرى أو تحويله إلى شيء مفيد.",
     category: "الحياة المستدامة",
-    icon: "🔄",
+    animation:"reuse"
     
   },
 
