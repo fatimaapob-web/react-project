@@ -69,11 +69,11 @@ function Home() {
         .home-float-delay { animation: home-float 6s ease-in-out 1.5s infinite; }
       `}</style>
 
-      <div
-        dir="rtl"
-        lang="ar"
-        className="home-page relative left-1/2 -ml-[50vw] w-screen overflow-x-hidden bg-[#FAF9F7] text-right text-neutral-700"
-      >
+<div
+  dir="rtl"
+  lang="ar"
+  className="home-page relative w-full overflow-x-hidden bg-[#FAF9F7] text-right text-neutral-700"
+>
         {/* ── 1. HERO ── */}
         <section className="relative min-h-[88vh] overflow-hidden">
           <div className="absolute inset-0">

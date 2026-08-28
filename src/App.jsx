@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
-import Footer from "./components/common/Footer";
 
 import Home from "./Pages/Home";
 import EnvironmentalAwareness from "./Pages/EnvironmentalAwareness";
@@ -17,7 +16,6 @@ import Products from "./Pages/Products";
 import Cart from "./Pages/Cart";
 import ProductDetails from "./Pages/ProductDetails";
 
-import Articles from "./Pages/Articles";
 
 
 function App() {
