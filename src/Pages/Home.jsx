@@ -29,21 +29,25 @@ const environmentTopics = [
     num: "٠١",
     title: "التلوث",
     text: "يؤثر على الهواء والماء والتربة ويضر بالصحة العامة.",
+    articleId: 1,
   },
   {
     num: "٠٢",
     title: "النفايات",
     text: "التراكم اليومي يضغط على نظامنا البيئي بشكل متزايد.",
+    articleId: 2,
   },
   {
     num: "٠٣",
     title: "الموارد الطبيعية",
     text: "محدودة وتحتاج إلى استخدام مدروس وحماية مستمرة.",
+    articleId: 3,
   },
   {
     num: "٠٤",
     title: "الاستدامة",
     text: "تضمن مستقبلًا أفضل للأجيال القادمة دون استنزاف الكوكب.",
+    articleId: 4,
   },
 ];
 
@@ -181,10 +185,11 @@ function Home() {
 
               <div className="grid gap-5 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-2 lg:gap-6">
                 {environmentTopics.map((topic) => (
-                  <div
-                    key={topic.title}
-                    className="group rounded-3xl border border-[#CFC6B5]/50 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#7A5742]/30 hover:shadow-xl sm:p-8"
-                  >
+  <Link
+    key={topic.title}
+    to={`/article/${topic.articleId}`}
+    className="group block rounded-3xl border border-[#CFC6B5]/50 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#7A5742]/30 hover:shadow-xl sm:p-8"
+  >
                     <div className="flex items-start justify-between gap-4">
                       <div>
                         <span className="text-xs font-bold tracking-widest text-[#CFC6B5]">
@@ -201,7 +206,7 @@ function Home() {
                         ←
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
