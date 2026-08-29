@@ -849,6 +849,106 @@ const getBakeryCart = () => {
           </section>
         )}
 
+          <section className="mt-20 overflow-hidden rounded-[2rem] bg-[#7A5742] p-8 text-white shadow-xl sm:p-10 lg:p-12">
+
+          <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+
+            <div>
+
+              <span className="text-sm font-bold tracking-widest text-[#CFC6B5]">
+                طريقة الاستخدام
+              </span>
+
+              <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+                اشترك اليوم،
+                <br />
+                واسحب حسب حاجتك.
+              </h2>
+
+              <p className="mt-5 max-w-md leading-8 text-white/70">
+                لا تحتاج إلى استلام كامل رصيدك دفعة واحدة. بعد الاشتراك،
+                يصبح لديك رصيد من الخبز يمكنك استخدامه تدريجيًا.
+              </p>
+
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-3">
+
+              <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-sm">
+
+                <div className="text-3xl">
+                  1️⃣
+                </div>
+
+                <h3 className="mt-4 font-bold">
+                  اختر اشتراكك
+                </h3>
+
+                <p className="mt-2 text-sm leading-6 text-white/65">
+                  اختر الكمية التي تناسب احتياجك.
+                </p>
+
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-sm">
+
+                <div className="text-3xl">
+                  2️⃣
+                </div>
+
+                <h3 className="mt-4 font-bold">
+                  احصل على رصيد
+                </h3>
+
+                <p className="mt-2 text-sm leading-6 text-white/65">
+                  يظهر لك إجمالي الخبز المتاح.
+                </p>
+
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-sm">
+
+                <div className="text-3xl">
+                  3️⃣
+                </div>
+
+                <h3 className="mt-4 font-bold">
+                  اسحب يوميًا
+                </h3>
+
+                <p className="mt-2 text-sm leading-6 text-white/65">
+                  اسحب 5 أو 10 أو أي كمية تحتاجها.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        {/* =========================
+            الملاحظة الأخيرة
+        ========================== */}
+
+        <section className="my-12 rounded-[2rem] border border-[#CFC6B5]/50 bg-white p-8 text-center shadow-sm">
+
+          <div className="text-4xl">
+            🌱
+          </div>
+
+          <h3 className="mt-4 text-xl font-black text-[#7A5742]">
+            اختياراتك تصنع فرقًا
+          </h3>
+
+          <p className="mx-auto mt-2 max-w-2xl text-sm leading-7 text-[#7A5742]/60">
+            سواء اخترت الاشتراك أو اشتريت منتجات منفردة، هدفنا أن نجعل
+            خياراتك اليومية أكثر سهولة ووعيًا.
+          </p>
+
+        </section>
+
         {/* =========================
             المنتجات
         ========================== */}
@@ -956,105 +1056,7 @@ const getBakeryCart = () => {
             كيف يعمل الاشتراك؟
         ========================== */}
 
-        <section className="mt-20 overflow-hidden rounded-[2rem] bg-[#7A5742] p-8 text-white shadow-xl sm:p-10 lg:p-12">
-
-          <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-
-            <div>
-
-              <span className="text-sm font-bold tracking-widest text-[#CFC6B5]">
-                طريقة الاستخدام
-              </span>
-
-              <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-                اشترك اليوم،
-                <br />
-                واسحب حسب حاجتك.
-              </h2>
-
-              <p className="mt-5 max-w-md leading-8 text-white/70">
-                لا تحتاج إلى استلام كامل رصيدك دفعة واحدة. بعد الاشتراك،
-                يصبح لديك رصيد من الخبز يمكنك استخدامه تدريجيًا.
-              </p>
-
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-3">
-
-              <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-sm">
-
-                <div className="text-3xl">
-                  1️⃣
-                </div>
-
-                <h3 className="mt-4 font-bold">
-                  اختر اشتراكك
-                </h3>
-
-                <p className="mt-2 text-sm leading-6 text-white/65">
-                  اختر الكمية التي تناسب احتياجك.
-                </p>
-
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-sm">
-
-                <div className="text-3xl">
-                  2️⃣
-                </div>
-
-                <h3 className="mt-4 font-bold">
-                  احصل على رصيد
-                </h3>
-
-                <p className="mt-2 text-sm leading-6 text-white/65">
-                  يظهر لك إجمالي الخبز المتاح.
-                </p>
-
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-sm">
-
-                <div className="text-3xl">
-                  3️⃣
-                </div>
-
-                <h3 className="mt-4 font-bold">
-                  اسحب يوميًا
-                </h3>
-
-                <p className="mt-2 text-sm leading-6 text-white/65">
-                  اسحب 5 أو 10 أو أي كمية تحتاجها.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-        {/* =========================
-            الملاحظة الأخيرة
-        ========================== */}
-
-        <section className="my-12 rounded-[2rem] border border-[#CFC6B5]/50 bg-white p-8 text-center shadow-sm">
-
-          <div className="text-4xl">
-            🌱
-          </div>
-
-          <h3 className="mt-4 text-xl font-black text-[#7A5742]">
-            اختياراتك تصنع فرقًا
-          </h3>
-
-          <p className="mx-auto mt-2 max-w-2xl text-sm leading-7 text-[#7A5742]/60">
-            سواء اخترت الاشتراك أو اشتريت منتجات منفردة، هدفنا أن نجعل
-            خياراتك اليومية أكثر سهولة ووعيًا.
-          </p>
-
-        </section>
+      
 
       </div>
     </main>

@@ -1,4 +1,5 @@
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const impactCards = [
   {
@@ -124,13 +125,7 @@ function Home() {
                   للجميع.
                 </p>
 
-                <button
-                  type="button"
-                  className="group relative overflow-hidden rounded-full bg-[#CFC6B5] px-9 py-3.5 text-base font-semibold text-[#7A5742] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl active:scale-95"
-                >
-                  <span className="relative z-10">اكتشف المزيد</span>
-                  <span className="absolute inset-0 -translate-x-full bg-white/30 transition-transform duration-500 group-hover:translate-x-full" />
-                </button>
+              
               </div>
 
               <div className="hidden lg:block">
@@ -371,18 +366,19 @@ function Home() {
                 مهمة.
               </p>
 
-              <button
-                type="button"
-                className="group relative mt-10 overflow-hidden rounded-full bg-[#7A5742] px-12 py-4 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#6a4a38] hover:shadow-2xl active:scale-95"
-              >
-                <span className="relative z-10 flex items-center justify-center gap-2">
-                  استكشف المخابز والمنتجات
-                  <span className="inline-block transition-transform duration-300 group-hover:-translate-x-1">
-                    ←
-                  </span>
-                </span>
-                <span className="absolute inset-0 -translate-x-full skew-x-12 bg-white/10 transition-transform duration-500 group-hover:translate-x-full" />
-              </button>
+              <Link
+  to="/bakeries"
+  className="group relative mt-10 inline-block overflow-hidden rounded-full bg-[#7A5742] px-12 py-4 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#6a4a38] hover:shadow-2xl active:scale-95"
+>
+  <span className="relative z-10 flex items-center justify-center gap-2">
+    استكشف المخابز
+    <span className="inline-block transition-transform duration-300 group-hover:-translate-x-1">
+      ←
+    </span>
+  </span>
+
+  <span className="absolute inset-0 -translate-x-full skew-x-12 bg-white/10 transition-transform duration-500 group-hover:translate-x-full" />
+</Link>
             </div>
           </div>
         </section>

@@ -7,7 +7,7 @@ function MainLayout() {
     <>
       <Navbar />
 
-      <main>
+      <main className="pt-[108px]">
         <Outlet />
       </main>
 

@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import image1 from "../assets/image1.png";
+import image2 from "../assets/image2.png";
+import image3 from "../assets/image3.png";
 
 import ProductCard from "../components/products/ProductCard";
 
@@ -10,7 +13,7 @@ const products = [
     price: 3000,
     description:
       "حزمة تحتوي على 100 كيس ورقي بحجم كبير، مناسبة للخبز والمنتجات الكبيرة.",
-    image: "",
+    image: image1,
   },
   {
     id: 2,
@@ -18,7 +21,7 @@ const products = [
     price: 2000,
     description:
       "حزمة تحتوي على 100 كيس ورقي بحجم متوسط، مناسبة للاستخدام اليومي.",
-    image: "",
+    image: image2,
   },
   {
     id: 3,
@@ -26,7 +29,7 @@ const products = [
     price: 1000,
     description:
       "حزمة تحتوي على 100 كيس ورقي بحجم صغير، مناسبة للمنتجات الخفيفة.",
-    image: "",
+   image: image3,
   },
 ];
 
