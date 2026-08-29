@@ -69,22 +69,27 @@ function Home() {
         .home-float-delay { animation: home-float 6s ease-in-out 1.5s infinite; }
       `}</style>
 
-<div
+    <div
   dir="rtl"
   lang="ar"
   className="home-page relative w-full overflow-x-hidden bg-[#FAF9F7] text-right text-neutral-700"
 >
         {/* ── 1. HERO ── */}
-        <section className="relative min-h-[88vh] overflow-hidden">
-          <div className="absolute inset-0">
-            <img
-              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=85"
-              alt="منظر طبيعي يعكس أهمية حماية البيئة"
-              className="h-full w-full scale-105 object-cover transition-transform duration-[8000ms] ease-out hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-l from-[#7A5742]/90 via-[#7A5742]/55 to-[#7A5742]/20" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#FAF9F7] via-transparent to-transparent" />
-          </div>
+       <section className="relative min-h-screen w-full overflow-visible">
+
+  <div className="absolute -top-[92px] inset-x-0 h-[calc(100%+92px)]">
+
+    <img
+      src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=85"
+      alt="منظر طبيعي يعكس أهمية حماية البيئة"
+      className="h-full w-full scale-105 object-cover"
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-l from-[#7A5742]/90 via-[#7A5742]/55 to-[#7A5742]/20" />
+
+    <div className="absolute inset-0 bg-gradient-to-t from-[#FAF9F7] via-transparent to-transparent" />
+
+  </div>
 
           {/* floating accents */}
           <div className="home-float pointer-events-none absolute top-[18%] left-[8%] hidden h-20 w-20 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm lg:block" />
