@@ -6,6 +6,8 @@ const animations = {
   energy: "/animations/energy.lottie",
   plant: "/animations/plant.lottie",
   cleanNature: "/animations/clean-nature.lottie",
+  reuse:"/animations/reuse.lottie"
+  
 };
 
 function TipCard({ tip }) {

@@ -1,7 +1,6 @@
-import { Routes, Route, useLocation } from "react-router-dom";
 
-import Navbar from "./components/common/Navbar";
-import Footer from "./components/common/Footer";
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
 
 import Home from "./Pages/Home";
 import EnvironmentalAwareness from "./Pages/EnvironmentalAwareness";
@@ -20,72 +19,89 @@ import Cart from "./Pages/Cart";
 import ProductDetails from "./Pages/ProductDetails";
 
 function App() {
-  const location = useLocation();
-
-  const isHome = location.pathname === "/";
-
   return (
-    <>
-      <Navbar />
+    <Routes>
+      <Route element={<MainLayout />}>
+        
+        {/* الصفحة الرئيسية */}
+        <Route path="/" element={<Home />} />
 
-      <div className={isHome ? "" : "pt-[108px]"}>
-        <Routes>
-          {/* الصفحة الرئيسية */}
-          <Route path="/" element={<Home />} />
+        {/* البيئة */}
+        <Route
+          path="/environmental-awareness"
+          element={<EnvironmentalAwareness />}
+        />
 
-          {/* البيئة */}
-          <Route
-            path="/environmental-awareness"
-            element={<EnvironmentalAwareness />}
-          />
+        {/* عن المشروع والتواصل */}
+        <Route
+          path="/about-project"
+          element={<AboutProject />}
+        />
 
-          <Route path="/about-project" element={<AboutProject />} />
+        <Route
+          path="/contact-us"
+          element={<ContactUs />}
+        />
 
-          <Route path="/contact-us" element={<ContactUs />} />
+        <Route
+          path="/tips"
+          element={<Tips />}
+        />
 
-          <Route path="/tips" element={<Tips />} />
+        {/* =========================
+            المخابز
+        ========================= */}
 
-          {/* =========================
-              المخابز
-          ========================= */}
-          <Route path="/bakeries" element={<Bakeries />} />
+        <Route
+          path="/bakeries"
+          element={<Bakeries />}
+        />
 
-          <Route
-            path="/bakery-store/:id"
-            element={<BakeryStore />}
-          />
+        <Route
+          path="/bakery-store/:id"
+          element={<BakeryStore />}
+        />
 
-          <Route
-            path="/bakery-cart"
-            element={<BakeryCart />}
-          />
+        <Route
+          path="/bakery-cart"
+          element={<BakeryCart />}
+        />
 
-          {/* =========================
-              المنتجات العامة
-          ========================= */}
-          <Route path="/products" element={<Products />} />
+        {/* =========================
+            المنتجات العامة
+        ========================= */}
 
-          <Route path="/cart" element={<Cart />} />
+        <Route
+          path="/products"
+          element={<Products />}
+        />
 
-          <Route
-            path="/product-details"
-            element={<ProductDetails />}
-          />
+        <Route
+          path="/cart"
+          element={<Cart />}
+        />
 
-          {/* =========================
-              المقالات
-          ========================= */}
-          <Route path="/articles" element={<Articles />} />
+        <Route
+          path="/product-details"
+          element={<ProductDetails />}
+        />
 
-          <Route
-            path="/article/:id"
-            element={<ArticleDetails />}
-          />
-        </Routes>
-      </div>
+        {/* =========================
+            المقالات
+        ========================= */}
 
-      <Footer />
-    </>
+        <Route
+          path="/articles"
+          element={<Articles />}
+        />
+
+        <Route
+          path="/article/:id"
+          element={<ArticleDetails />}
+        />
+
+      </Route>
+    </Routes>
   );
 }
 

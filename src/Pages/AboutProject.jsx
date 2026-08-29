@@ -2,12 +2,12 @@ function AboutProject() {
   return (
     <section
   dir="rtl"
-  className="min-h-screen bg-[#CFC6B5] px-6 py-12 text-[#7A5742]"
+  className="mx-4 my-6 min-h-screen rounded-[40px] bg-[#CFC6B5] px-6 py-12 md:mx-8"
 >
-
-      <h2 className="mb-6 text-center text-4xl font-bold text-[#7A5742]">
+  <h2 className="page-title mb-6 text-center text-4xl font-bold text-[#7A5742]">
   🌍 عن المشروع
 </h2>
+
 
       <p className="mx-auto mb-12 max-w-3xl text-center text-lg leading-8 text-[#7A5742]">
         يهدف هذا المشروع إلى نشر الوعي البيئي وتشجيع الجميع

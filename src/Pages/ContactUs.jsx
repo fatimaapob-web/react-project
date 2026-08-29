@@ -2,13 +2,12 @@ function ContactUs() {
   return (
     <section
       dir="rtl"
-      className="min-h-screen bg-[#CFC6B5] px-6 py-12 text-[#7A5742]"
+      className="mx-4 my-6 min-h-screen rounded-[40px] bg-[#CFC6B5] px-6 py-12 md:mx-8"
     >
 
-      <h2 className="mb-4 text-center text-4xl font-bold">
-        📞 تواصل معنا
-      </h2>
-
+      <h1 className="page-title w-full text-center text-5xl font-bold text-[#7A5742]">
+  📞 تواصل معنا
+</h1>
       <p className="mx-auto mb-12 max-w-2xl text-center text-lg leading-8">
         إذا كانت لديك أي استفسارات أو مقترحات،
         يسعدنا التواصل معك والاستماع إلى أفكارك
